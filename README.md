@@ -18,7 +18,7 @@
 
 I build gameplay systems and multiplayer netcode in Unreal Engine 5. 
 
-I really enjoy digging into engine internals to understand how things work under the hood. Most of my work revolves around solving the tricky problems—things like client-side prediction, custom locomotion with the new Mover component, physics desyncs, and GAS replication. 
+I really enjoy digging into engine internals to understand how things work under the hood. Most of my work revolves around solving the tricky problems things like client-side prediction, custom locomotion with the new Mover component, physics desyncs, and GAS replication. 
 
 At the same time, I believe deep tech is only useful if the rest of the team can actually use it. Whenever I build a system, my priority is making sure 3D artists, designers, and animators can plug their work in through clean DataAssets and visual tools without needing to touch C++ or wait on code rebuilds.
 
