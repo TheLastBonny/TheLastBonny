@@ -45,6 +45,29 @@ This was my undergraduate thesis project at ITLA, where I served as the sole pro
 
 ---
 
+#### ⚡ [Lucking](https://github.com/TheLastBonny/Lucking)
+*Mass Entity (ECS) Crowd Simulation & GAS Combat Framework in UE 5.8*
+
+<p align="center">
+  <img src="assets/lucking_mass_query.gif" alt="Mass Entity Horde Query in UE 5.8" width="48%" style="border-radius: 8px;" />
+  <img src="assets/lucking_attack_montage.gif" alt="Character Attack Montage with AnimNotifies" width="48%" style="border-radius: 8px;" />
+</p>
+
+When you want massive hordes on screen, standard Character actors with full Ability System Components (ASCs) will choke the game thread. In Lucking, I set out to decouple the problem into two complementary systems:
+
+* **Mass Entity (ECS) Horde Processing:** Wrote `LuckingMassProcessor` and `LuckingMassFragment` to execute parallel queries across CPU archetype chunks. In the technical preview above, 250+ entities are evaluated in real-time with zero game thread stutters.
+* **Custom Async Melee Sweep in GAS:** Rather than basic Blueprint overlaps, I engineered `AbilityTask_WaitMeleeSweep` in C++. Custom AnimNotify events (`BP_NotifyPers`) trigger the sweep window along weapon sockets, prevent duplicate hits on the same target during a single swing, and apply GameplayEffects through the target's ASC.
+
+<p align="center">
+  <img src="assets/lucking_gas_sweep_blueprint.png" alt="GAS Melee Sweep Blueprint Graph" width="95%" style="border-radius: 8px;" />
+  <br>
+  <em>The complete GAS melee ability graph in Lucking: cosmetic cues, AnimNotify listeners, sweep collision, and ASC effect delegation.</em>
+</p>
+
+👉 **[Explore the Lucking Codebase & Architecture Docs](https://github.com/TheLastBonny/Lucking)**
+
+---
+
 #### ⚔️ [Keep Your Light (KYL)](https://thelastbonny.itch.io/keep-your-light)
 *Top-Down Action Survival Game · Epic MegaJam 2025*
 
@@ -61,17 +84,6 @@ A complete action survival game I solo-developed from scratch and shipped within
 
 🎬 **[Watch Gameplay Video on YouTube](https://www.youtube.com/watch?v=9_uo31k7VyI)**  
 🎮 **[Play Keep Your Light for free on Itch.io](https://thelastbonny.itch.io/keep-your-light)**
-
----
-
-#### ⚡ Lucking (Experimental Framework)
-*High-Density Crowd Simulation with Mass Entity (ECS) & GAS in UE 5.8*
-
-An experimental sandbox where I wanted to push performance limits by exploring Unreal's **Mass Entity** framework:
-
-* Wrote custom `MassProcessors` and `MassFragments` to handle crowd pathfinding and spatial queries across parallel CPU chunks.
-* Implemented a `LuckingHordeDirector` to distribute target allocations dynamically without choking the game thread.
-* Created a clean bridging interface (`LuckingCombatInterface`) so individual Mass entities can dispatch gameplay events into the Gameplay Ability System without sacrificing ECS memory locality.
 
 ---
 
