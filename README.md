@@ -24,25 +24,6 @@ At the same time, I believe deep tech is only useful if the rest of the team can
 
 ---
 
-#### ⚔️ [Keep Your Light (KYL)](https://thelastbonny.itch.io/keep-your-light)
-*Top-Down Action Survival Game · Epic MegaJam 2025*
-
-<p align="center">
-  <img src="assets/keep_your_light_boss.jpg" alt="Keep Your Light Boss Fight" width="48%" style="border-radius: 8px;" />
-  <img src="assets/keep_your_light_action.jpg" alt="Keep Your Light Gameplay Action" width="48%" style="border-radius: 8px;" />
-</p>
-
-A complete action survival game I solo-developed from scratch and shipped within the tight deadlines of the 2025 Epic MegaJam.
-
-* **The Combat Loop:** Fast-paced arena combat where you manage your light energy while fighting off shadowy creature waves.
-* **Multi-Phase Boss Encounter:** Scripted a challenging final boss with telegraphed attack patterns, bullet-hell projectile spreads, and distinct combat phases.
-* **Modular Systems:** Programmed an entity-agnostic health, hit-reaction, and stamina management system with responsive UI feedback in UMG.
-
-🎬 **[Watch Gameplay Video on YouTube](https://www.youtube.com/watch?v=9_uo31k7VyI)**  
-🎮 **[Play Keep Your Light for free on Itch.io](https://thelastbonny.itch.io/keep-your-light)**
-
----
-
 ### Featured Projects
 
 #### 🎮 [ProjectF (Good Service)](https://github.com/TheLastBonny/Good-Service-PlaceHolder-Public-W.I.P)
@@ -61,6 +42,25 @@ This was my undergraduate thesis project at ITLA, where I served as the sole pro
 * **Autonomous Customers with StateTree:** Built an AI customer loop using StateTree and SmartObjects to handle dynamic table queues, ordering, and food pickup.
 
 👉 **[Check out the ProjectF GitHub Repository & Technical Docs](https://github.com/TheLastBonny/Good-Service-PlaceHolder-Public-W.I.P)**
+
+---
+
+#### ⚔️ [Keep Your Light (KYL)](https://thelastbonny.itch.io/keep-your-light)
+*Top-Down Action Survival Game · Epic MegaJam 2025*
+
+<p align="center">
+  <img src="assets/keep_your_light_boss.jpg" alt="Keep Your Light Boss Fight" width="48%" style="border-radius: 8px;" />
+  <img src="assets/keep_your_light_action.jpg" alt="Keep Your Light Gameplay Action" width="48%" style="border-radius: 8px;" />
+</p>
+
+A complete action survival game I solo-developed from scratch and shipped within the tight deadlines of the 2025 Epic MegaJam.
+
+* **The Combat Loop:** Fast-paced arena combat where you manage your light energy while fighting off shadowy creature waves.
+* **Multi-Phase Boss Encounter:** Scripted a challenging final boss with telegraphed attack patterns, bullet-hell projectile spreads, and distinct combat phases.
+* **Modular Systems:** Programmed an entity-agnostic health, hit-reaction, and stamina management system with responsive UI feedback in UMG.
+
+🎬 **[Watch Gameplay Video on YouTube](https://www.youtube.com/watch?v=9_uo31k7VyI)**  
+🎮 **[Play Keep Your Light for free on Itch.io](https://thelastbonny.itch.io/keep-your-light)**
 
 ---
 
