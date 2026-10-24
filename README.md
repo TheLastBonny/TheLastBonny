@@ -1,104 +1,93 @@
 <div align="center">
 
-# Eduardo Javier Oran Mejia
+# Hey, I'm Eduardo! 👋
 ### Unreal Engine C++ Gameplay & Systems Programmer
+**Santo Domingo, Dominican Republic (UTC-4 / EST) · Open to Remote Indie & Co-Dev Roles**
 
-[![Unreal Engine](https://img.shields.io/badge/Unreal_Engine_5.8-0E1128?style=for-the-badge&logo=unrealengine&logoColor=white)](https://www.unrealengine.com/)
-[![C++](https://img.shields.io/badge/C++20-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://isocpp.org/)
-[![Itch.io](https://img.shields.io/badge/Itch.io-FA5C5C?style=for-the-badge&logo=itch.io&logoColor=white)](https://thelastbonny.itch.io)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thelastbonny/)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:eduardoomjavier@gmail.com)
-
-**Santo Domingo, Dominican Republic (UTC-4 / AST · EST Aligned)**  
-*Available for Worldwide Remote Roles (Independent B2B Contractor)*
+[![Unreal Engine](https://img.shields.io/badge/Unreal_Engine_5-0E1128?style=flat-square&logo=unrealengine&logoColor=white)](https://www.unrealengine.com/)
+[![C++](https://img.shields.io/badge/C++20-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)](https://isocpp.org/)
+[![Playable Games on Itch.io](https://img.shields.io/badge/Itch.io-Games-FA5C5C?style=flat-square&logo=itch.io&logoColor=white)](https://thelastbonny.itch.io)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thelastbonny/)
+[![Email Me](https://img.shields.io/badge/Email-Contact-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:eduardoomjavier@gmail.com)
 
 </div>
 
 ---
 
-### 👨‍💻 About Me
+### What I Do
 
-I am a **Systems and Gameplay Programmer** specializing in Unreal Engine 5. My work bridges low-level engine mechanics—such as networked locomotion, custom sync states, and Mass Entity—with clean, intuitive designer workflows using the Gameplay Ability System (GAS) and modular DataAssets.
+I build gameplay systems and multiplayer netcode in Unreal Engine 5. 
 
-> *"I engineer robust technical foundations so that artists, designers, and audio creators can bring worlds to life without fighting engine friction or fragile inheritance trees."*
+I really enjoy digging into engine internals to understand how things work under the hood. Most of my work revolves around solving the tricky problems—things like client-side prediction, custom locomotion with the new Mover component, physics desyncs, and GAS replication. 
 
-* ⚡ **Core Focus:** Network Prediction, Custom Mover Components, GAS Replication, and Data-Driven Architecture.
-* 🤝 **Multidisciplinary Leadership:** Proven experience leading technical architecture in 3-person teams (Programmer + 3D Artist + Sound Designer) with asynchronous, conflict-free pipelines.
-* 🌐 **Languages:** Spanish (Native), English (Professional Working Proficiency).
+At the same time, I believe deep tech is only useful if the rest of the team can actually use it. Whenever I build a system, my priority is making sure 3D artists, designers, and animators can plug their work in through clean DataAssets and visual tools without needing to touch C++ or wait on code rebuilds.
 
 ---
 
-### 🚀 Featured Projects
+### Featured Projects
 
-#### 1. [ProjectF (Good Service)](https://github.com/TheLastBonny/Good-Service-PlaceHolder-Public-W.I.P) — *Modular Multiplayer Gameplay Framework*
-> **Role:** Lead Systems & Gameplay Programmer (580+ Engineering Hours · 111 C++ Classes)  
-> **Tech Stack:** Unreal Engine 5.8, Modern C++, Chaos Mover 2.0, Network Prediction Plugin, GAS, StateTree
+#### 🎮 [ProjectF (Good Service)](https://github.com/TheLastBonny/Good-Service-PlaceHolder-Public-W.I.P)
+*Multiplayer Service & Cooking Framework in Unreal Engine 5.8*
 
 <p align="center">
-  <img src="assets/projectf_gameplay.jpg" alt="ProjectF Gameplay Scene" width="90%" style="border-radius: 8px;" />
+  <img src="assets/projectf_real_1.jpg" alt="ProjectF Gameplay Scene" width="48%" style="border-radius: 8px;" />
+  <img src="assets/projectf_real_2.jpg" alt="ProjectF Station Interaction" width="48%" style="border-radius: 8px;" />
 </p>
 
-* **Networked Locomotion:** Engineered custom kinematic movement atop UE5's Mover 2.0 and Network Prediction plugin (`FMoverSyncState`), achieving seamless client-side prediction and server reconciliation with independent ticking policies.
-* **GAS Integration:** Bound dynamic locomotion properties (sprint, stamina decay, walk speed) directly to Gameplay Attributes via C++ delegates, eliminating polling overhead.
-* **Data-Driven Artist Pipeline:** Architected modular DataAssets (`UGSItemDataAsset`, `AGSItem`) and stations (`GSUtilityStation`), enabling our 3D artist and audio designer to implement new assets, animations, and sound triggers without code recompilation or merge conflicts.
-* **Autonomous AI with StateTree:** Designed NPC customer simulation using StateTree and SmartObjects to handle orders, seating queues, and table interactions.
+This was my undergraduate thesis project at ITLA, where I served as the sole programmer on a 3-person team alongside a 3D artist and an audio designer. We put over 580 hours into testing how far we could take modern UE 5.8 architectures by moving away from monolithic Blueprints into modular, data-driven systems.
+
+* **Networked Movement & Prediction:** Configured the Chaos Mover 2.0 component with the Network Prediction plugin, writing custom sync states (`FMoverSyncState`) to deliver smooth client prediction and server authoritative rollback reconciliation.
+* **Direct GAS Binding:** Connected Gameplay Ability System attribute delegates (like movement speed and stamina drain) directly into Mover locomotion parameters, eliminating tick polling.
+* **Asynchronous Artist Pipeline:** Designed a flexible entity and station pipeline (`AGSItem`, `UGSItemDataAsset`, `GSUtilityStation`). This allowed our artist and musician to add new items, animations, and sound triggers completely asynchronously without blocking code or causing Git merge conflicts.
+* **Autonomous Customers with StateTree:** Built an AI customer loop using StateTree and SmartObjects to handle dynamic table queues, ordering, and food pickup.
+
+👉 **[Check out the ProjectF GitHub Repository & Technical Docs](https://github.com/TheLastBonny/Good-Service-PlaceHolder-Public-W.I.P)**
+
+---
+
+#### ⚔️ [Keep Your Light (KYL)](https://thelastbonny.itch.io/keep-your-light)
+*Top-Down Action Survival Game · Epic MegaJam 2025*
 
 <p align="center">
-  <a href="https://github.com/TheLastBonny/Good-Service-PlaceHolder-Public-W.I.P"><b>[📂 Explore GitHub Repository]</b></a> • 
-  <a href="https://github.com/TheLastBonny/Good-Service-PlaceHolder-Public-W.I.P#technical-deep-dive"><b>[📖 Architecture Documentation]</b></a>
+  <img src="assets/keep_your_light_boss.jpg" alt="Keep Your Light Boss Fight" width="48%" style="border-radius: 8px;" />
+  <img src="assets/keep_your_light_action.jpg" alt="Keep Your Light Gameplay Action" width="48%" style="border-radius: 8px;" />
 </p>
 
----
+A complete action survival game I solo-developed from scratch and shipped within the tight deadlines of the 2025 Epic MegaJam.
 
-#### 2. [Keep Your Light](https://thelastbonny.itch.io/keep-your-light) — *Solo Action Survival (Epic MegaJam 2025)*
-> **Role:** Solo Developer (Systems, Combat Mechanics, AI, UI, Shipping)  
-> **Tech Stack:** Unreal Engine 5, C++, State-Driven Combat, AI Boss Mechanics, UMG
+* **The Combat Loop:** Fast-paced arena combat where you manage your light energy while fighting off shadowy creature waves.
+* **Multi-Phase Boss Encounter:** Scripted a challenging final boss with telegraphed attack patterns, bullet-hell projectile spreads, and distinct combat phases.
+* **Modular Systems:** Programmed an entity-agnostic health, hit-reaction, and stamina management system with responsive UI feedback in UMG.
 
-* Designed, programmed, and shipped a complete action-survival title under strict game jam constraints.
-* Built modular hit-detection, stamina management, dynamic projectile physics, and telegraphed multi-phase boss attack patterns in C++.
-* Shipped a standalone playable build for PC on Itch.io.
-
-<p align="center">
-  <a href="https://thelastbonny.itch.io/keep-your-light"><b>[🎮 Play on Itch.io]</b></a>
-</p>
+🎬 **[Watch Gameplay Video on YouTube](https://www.youtube.com/watch?v=9_uo31k7VyI)**  
+🎮 **[Play Keep Your Light for free on Itch.io](https://thelastbonny.itch.io/keep-your-light)**
 
 ---
 
-#### 3. Lucking (Experimental Prototype) — *Mass Entity (ECS) & GAS Convergence*
-> **Research & Performance Sandbox**
+#### ⚡ Lucking (Experimental Framework)
+*High-Density Crowd Simulation with Mass Entity (ECS) & GAS in UE 5.8*
 
-* Explored high-density entity simulation in UE5 using **Mass Entity (ECS)**, writing parallel `MassProcessors` and `MassFragments` for cache-friendly memory layouts.
-* Constructed a lightweight bridging interface that allows individual Mass entities to signal events into the Gameplay Ability System without breaking CPU chunk locality.
+An experimental sandbox where I wanted to push performance limits by exploring Unreal's **Mass Entity** framework:
 
----
-
-### 🧰 Technical Competencies
-
-| Category | Skills & Implementations |
-| :--- | :--- |
-| **Engine & Programming** | Unreal Engine 5.5 / 5.8, Modern C++ (C++20), Object-Oriented & Data-Oriented Design (POD/DOD) |
-| **Locomotion & Netcode** | Chaos Mover 2.0, Network Prediction Plugin, Client Prediction, Rollback/Replay Reconciliation, Replication |
-| **Gameplay Systems** | Gameplay Ability System (GAS), GameplayEffects, GameplayCues, AttributeSets, StateTree, SmartObjects |
-| **Tooling & Designer UX** | DataAssets, Subsystem Architecture, CommonUI, UMG, Slate Basics, MetaSounds integration |
-| **Workflow & VCS** | Git, GitHub, Perforce (P4), Asynchronous Pipeline Creation, Visual Studio 2022 |
+* Wrote custom `MassProcessors` and `MassFragments` to handle crowd pathfinding and spatial queries across parallel CPU chunks.
+* Implemented a `LuckingHordeDirector` to distribute target allocations dynamically without choking the game thread.
+* Created a clean bridging interface (`LuckingCombatInterface`) so individual Mass entities can dispatch gameplay events into the Gameplay Ability System without sacrificing ECS memory locality.
 
 ---
 
-### 📊 Engineering Philosophy & Metrics
+### What I Work With Daily
 
-```
-  580+ Hours          111 C++ Classes       0 Merge Conflicts
-  In-Engine Dev       Clean Architecture    Across 3-Person Team
-```
-
-* **Build Quick, Build Strong:** Rapid prototyping with DataAssets and C++ interfaces so systems can be tested immediately without technical debt.
-* **Separation of Concerns:** Keep simulation logic strictly decoupled from visuals and audio, facilitating easy updates for artists.
+* **Engines:** Unreal Engine (5.5 / 5.8), Roblox Studio (Luau)
+* **Languages:** C++ (Modern C++20), Blueprints, Lua, Python, C#
+* **Systems & Architecture:** Chaos Mover 2.0, Network Prediction Plugin, Gameplay Ability System (GAS), StateTree, SmartObjects, Mass Entity (ECS), CommonUI
+* **Workflow & Tools:** Git / GitHub, Perforce (P4), Visual Studio 2022, Blender, Unreal Build Tool
 
 ---
 
-### 📬 Contact & Links
+### Let's Connect!
 
-* 🎮 **Playable Games:** [thelastbonny.itch.io](https://thelastbonny.itch.io)
+I am always happy to chat about gameplay architecture, networking experiments, or indie game development in general.
+
 * 💼 **LinkedIn:** [linkedin.com/in/thelastbonny](https://www.linkedin.com/in/thelastbonny/)
-* 📂 **GitHub:** [github.com/TheLastBonny](https://github.com/TheLastBonny)
-* ✉️ **Direct Email:** [eduardoomjavier@gmail.com](mailto:eduardoomjavier@gmail.com)
+* 🎮 **Itch.io:** [thelastbonny.itch.io](https://thelastbonny.itch.io)
+* ✉️ **Email:** [eduardoomjavier@gmail.com](mailto:eduardoomjavier@gmail.com)
