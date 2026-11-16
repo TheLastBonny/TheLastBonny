@@ -100,6 +100,6 @@ When you want massive hordes on screen, standard Character actors with full Abil
 
 I am always happy to chat about gameplay architecture, networking experiments, or indie game development in general.
 
-* 💼 **LinkedIn:** [linkedin.com/in/thelastbonny](https://www.linkedin.com/in/thelastbonny/)
+* 💼 **LinkedIn:** [linkedin.com/in/Eduardo-Javier-Oran-Mejia](https://www.linkedin.com/in/eduardo-javier-oran-mejia-576a82362/)
 * 🎮 **Itch.io:** [thelastbonny.itch.io](https://thelastbonny.itch.io)
 * ✉️ **Email:** [eduardoomjavier@gmail.com](mailto:eduardoomjavier@gmail.com)
